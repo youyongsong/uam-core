@@ -1,0 +1,13 @@
+description: "Powerful, clean, object-oriented scripting language."
+image: "ruby:2.5-alpine"
+entrypoints:
+  ruby:
+    container_entrypoint: ruby
+  irb:
+    container_entrypoint: irb
+  bundle:
+    container_entrypoint: bundle
+
+volumes:
+  - path: /usr/local/
+  - path: /var/local/

@@ -1,0 +1,16 @@
+description: "Functional metaprogramming aware language built on Erlang VM."
+image: "elixir:1.5-alpine"
+entrypoints:
+  iex:
+    container_entrypoint: iex
+  mix:
+    container_entrypoint: mix
+  elixir:
+    container_entrypoint: elixir
+
+environments:
+  - MIX_ENV: ${MIX_ENV}
+
+volumes:
+  - path: /usr/local
+  - path: /var/local

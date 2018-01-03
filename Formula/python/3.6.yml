@@ -1,0 +1,21 @@
+description: "Interpreted, interactive, object-oriented programming language."
+image: "python:3.6-alpine"
+entrypoints:
+  python:
+    container_entrypoint: python
+  pip:
+    container_entrypoint: pip
+  python3:
+    container_entrypoint: python
+
+configs:
+  - host_path: ~/.pip
+    container_path: /root/.pip
+  - host_path: ~/.pypirc
+    container_path: /root/.pypirc
+  - host_path: ~/.python_history
+    container_path: /root/.python_history
+    
+volumes:
+  - path: /usr/local
+  - path: /var/local
