@@ -1,5 +1,5 @@
 description: |
-HTTPie is a command line HTTP client that will make you smile.
+  HTTPie is a command line HTTP client that will make you smile.
 image: "youyongsong/httpie:0.9"
 entrypoints:
   http:
