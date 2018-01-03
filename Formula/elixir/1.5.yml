@@ -9,7 +9,7 @@ entrypoints:
     container_entrypoint: elixir
 
 environments:
-  - MIX_ENV: ${MIX_ENV}
+  MIX_ENV: ${MIX_ENV}
 
 volumes:
   - path: /usr/local
