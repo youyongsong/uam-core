@@ -1,0 +1,8 @@
+description: |
+  Minio Client (mc) provides a modern alternative to UNIX commands like ls, cat, cp, mirror, diff etc.
+image: "minio/mc:RELEASE.2017-12-12T01-08-02Z"
+entrypoints:
+  mc:
+    container_entrypoint: mc
+volumes:
+  - path: /root/.mc
