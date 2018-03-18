@@ -1,0 +1,17 @@
+description: "Node.js is a JavaScript-based platform for server-side and networking applications."
+image: "node:9-alpine"
+entrypoints:
+  node:
+    container_entrypoint: node
+  npm:
+    container_entrypoint: npm
+  npx:
+    container_entrypoint: npx
+  yarn:
+    container_entrypoint: yarn
+  yarnpkg:
+    container_entrypoint: yarnpkg
+
+volumes:
+  - path: /usr/local/
+  - path: /var/local/
