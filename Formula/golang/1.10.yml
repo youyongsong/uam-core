@@ -1,0 +1,12 @@
+
+description: "Go (golang) is a general purpose, higher-level, imperative programming language."
+image: "golang:1.10-alpine"
+entrypoints:
+  go:
+    container_entrypoint: go
+  gofmt:
+    container_entrypoint: gofmt
+    
+volumes:
+  - path: /usr/local
+  - path: /var/local
